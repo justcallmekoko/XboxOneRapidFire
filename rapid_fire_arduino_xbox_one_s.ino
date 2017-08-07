@@ -12,19 +12,11 @@ void setup() {
   pinMode(R3, INPUT);
   pinMode(LED, OUTPUT);
   Serial.begin(9600);
-  //pinMode(SYNC, INPUT);
 }
 
 
 void loop()
 {
-  //int lb = analogRead(RB);
-  //Serial.println(lb);
-  //digitalWrite(RB, HIGH);
-  //delay(20);
-  //digitalWrite(RB, LOW);
-  //delay(100);
-  //if (digitalRead(SYNC) == HIGH)
 
 
   int L3sig = analogRead(L3);
@@ -54,36 +46,7 @@ void loop()
   
   pinMode(RB, INPUT);
   int sig = analogRead(RB);
-  //Serial.println(sig);
 
-  //if (sig > 100 && sig != 0 && active == true)
-  //{
-    /*
-    //analogWrite(SHOOT, sig);
-    pinMode(RB, INPUT);
-    */
-
-/*
-    pinMode(RB, OUTPUT);
-    analogWrite(RB, 0);
-    delay(20);
-    //analogWrite(SHOOT, 255);
-    pinMode(RB, INPUT);
-    delay(108);
-    */
-    //digitalWrite(LED, HIGH);
-    //delay(500);
-    //digitalWrite(LED, LOW);
-    //delay(500);
-  //}
-
-
-  //digitalWrite(power, HIGH);
-  //if (sig > 50 || sig == 0 && active == true)
-  //else if (sig < 25 && sig > 15 && sig != 0 && active == true)
-  //{
-    //Serial.println(sig);
-    //Serial.println("cool");
     
 
   if (active == true)
@@ -96,24 +59,14 @@ void loop()
     digitalWrite(LED, LOW);
     pinMode(RB, INPUT);
     delay(100);
-    
-    
-    //analogWrite(SHOOT, sig);
-    //pinMode(RB, INPUT);
-    //delay(50);
-    
-    //delay(50);
-    cool++;
-    //Serial.println(cool);
+
   }
 
-  //}
   if (active == true)
   {
     int chicken = 4;
   }
-  //else if (sig < 16 && sig != 0 && active == true)
-  //else if (sig < 50 && sig != 0 && active == true)
+
   
   else if (active == false)
   {
