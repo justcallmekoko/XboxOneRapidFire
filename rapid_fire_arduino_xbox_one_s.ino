@@ -61,6 +61,18 @@ void loop()
     delay(100);
 
   }
+  /*
+  // THIS MAY WORK BUT I HAVE NOT TESTED
+  // THIS SHOULD FIX THE RANDOM SHOTS WHILE THE MOD IS ON
+  if (active == true)
+  {
+    pinMode(RB, OUTPUT);
+    analogWrite(RB, 1000);
+    delay(22);
+    pinMode(RB, INPUT);
+    delay(100);
+  }
+  */
 
   if (active == true)
   {
