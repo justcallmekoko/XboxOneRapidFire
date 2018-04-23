@@ -44,17 +44,8 @@ void loop()
   int sig = analogRead(RB);
     
 
-  if (active == true)
-  {
-    pinMode(RB, OUTPUT);
-    analogWrite(RB, 1000);
-    delay(22);
-    analogWrite(RB, 0);
-    pinMode(RB, INPUT);
-    delay(100);
-  }
-  /*
-  // THIS MAY WORK BUT I HAVE NOT TESTED
+
+
   // THIS SHOULD FIX THE RANDOM SHOTS WHILE THE MOD IS ON
   if (active == true)
   {
@@ -64,7 +55,7 @@ void loop()
     pinMode(RB, INPUT);
     delay(100);
   }
-  */
+
   if (active == true)
   {
     int chicken = 4;
