@@ -47,22 +47,7 @@ void loop()
   pinMode(RB, INPUT);
   int sig = analogRead(RB);
 
-    
 
-  if (active == true)
-  {
-    pinMode(RB, OUTPUT);
-    digitalWrite(LED, HIGH);
-    analogWrite(RB, 1000);
-    delay(22);
-    analogWrite(RB, 0);
-    digitalWrite(LED, LOW);
-    pinMode(RB, INPUT);
-    delay(100);
-
-  }
-  /*
-  // THIS MAY WORK BUT I HAVE NOT TESTED
   // THIS SHOULD FIX THE RANDOM SHOTS WHILE THE MOD IS ON
   if (active == true)
   {
@@ -72,7 +57,7 @@ void loop()
     pinMode(RB, INPUT);
     delay(100);
   }
-  */
+
 
   if (active == true)
   {
